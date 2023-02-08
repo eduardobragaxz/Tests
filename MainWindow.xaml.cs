@@ -17,12 +17,12 @@ public sealed partial class MainWindow : Window
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-        TestClass model = new()
+        TestClass testClass = new()
         {
             Note = $"this is note number {count++}"
         };
 
-        ListOfStrings.Add(model);
+        ListOfStrings.Add(testClass);
     }
     private void Expander_Expanding(Expander sender, ExpanderExpandingEventArgs args)
     {
